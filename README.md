@@ -4,6 +4,10 @@ This Rails application is intended to be used as an opportunity for students to 
 
 Fork this repository and clone your newly created repository.
 
+## Contributors
+
+Chris Allbritton
+Dani Coleman
 ## Be sure to read all user stories BEFORE beginning your work
 ---
 
