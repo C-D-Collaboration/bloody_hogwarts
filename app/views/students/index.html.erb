@@ -1,6 +1,11 @@
-<h1>All Students</h1>
-<% @students.each do |student| %>
-    <p><%= student.name %></p>
-    <p><%= student.age %></p>
-    <p><%= student.house %></p>
-<% end %>
+<center>
+  <h2>All Students</h2>
+</center>
+
+<section class='student'>
+  <% @students.each do |student| %>
+    <h3 class='name'><%= student.name %></h3>
+    <p class='age'><%= student.age %></p>
+    <p class='house'><%= student.house %></p>
+  <% end %>
+</section>
