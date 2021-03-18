@@ -8,6 +8,8 @@ Fork this repository and clone your newly created repository.
 
 Chris Allbritton
 Dani Coleman
+
+# Add links to repos for contributors
 ## Be sure to read all user stories BEFORE beginning your work
 ---
 
