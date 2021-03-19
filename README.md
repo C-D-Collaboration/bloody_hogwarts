@@ -43,6 +43,8 @@ Dani Coleman
 ## User Stories
 
 ```
+Complete: 
+
 User Story 1 of 4
 
 As a visitor,
@@ -55,6 +57,8 @@ I see a list of students with the following information:
 ```
 
 ```
+Complete:
+
 User Story 2 of 4
 
 As a visitor,
@@ -67,6 +71,8 @@ I see a list of the students' courses.
 ```
 
 ```
+Complete: 
+
 User Story 3 of 4
 As a visitor,
 When I visit '/courses'
