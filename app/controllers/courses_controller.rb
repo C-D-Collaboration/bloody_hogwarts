@@ -1,5 +1,6 @@
 class CoursesController < ApplicationController
   def index
-    @courses = Course.all
+    all_courses = Course.all
+    @courses = Course.sorted_courses(all_courses)
   end
 end
