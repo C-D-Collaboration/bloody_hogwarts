@@ -1,6 +1,7 @@
 class StudentsController < ApplicationController
   def index
-    @students = Student.all
+    all_students = Student.all
+    @students = Student.sorted_students(all_students)
     @average_age = Student.average_age
   end
 

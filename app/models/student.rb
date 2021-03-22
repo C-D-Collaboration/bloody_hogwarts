@@ -6,4 +6,10 @@ class Student < ApplicationRecord
   def self.average_age
     average(:age).to_f
   end
+
+  def self.sorted_students(all_students)
+    all_students.sort_by do |student|
+      student.name
+    end
+  end
 end
