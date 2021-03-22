@@ -47,4 +47,14 @@ RSpec.describe 'student index' do
 
     expect(page).to have_content("Average Age: 11.25")
   end
+
+  it 'shows students in alphabetical order' do
+    visit students_path
+
+    expect(@student4.name).to appear_before(@student1.name)
+    expect(@student1.name).to appear_before(@student3.name)
+    expect(@student3.name).to appear_before(@student2.name)
+
+    expect(@student1.name).to_not appear_before(@student4.name)
+  end
 end

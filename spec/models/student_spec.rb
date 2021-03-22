@@ -24,5 +24,17 @@ RSpec.describe Student, type: :model do
 
       expect(average_age).to eq(11.25)
     end
+
+    it "can sort students by name" do
+      student1 = Student.create(name: "Harry", age: 12, house: "Griffindor")
+      student2 = Student.create(name: "Ron", age: 11, house: "Slytherin")
+      student3 = Student.create(name: "Jenny", age: 9, house: "Hufflepuff")
+      student4 = Student.create(name: "Beth", age: 13, house: "Ravenclaw")
+
+      all_students = Student.all
+      sorted = Student.sorted_students(all_students)
+
+      expect(sorted).to eq([student4, student1, student3, student2])
+    end
   end
 end
